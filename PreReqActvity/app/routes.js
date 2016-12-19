@@ -4,7 +4,8 @@
 var prereqdata = require('./models/nerd');
 
 var assert = require('assert');
-var url = 'mongodb://localhost:27017/perf-db';
+//var url = 'mongodb://localhost:27017/perf-db';
+var url = 'mongodb://aman.sachdeva21:sapient123@ds139448.mlab.com:39448/perf-db';
 var MongoClient = require('mongodb').MongoClient;
 
 module.exports = function(app) {
