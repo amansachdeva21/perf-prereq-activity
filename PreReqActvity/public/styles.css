@@ -1,0 +1,33 @@
+body {
+    margin: 15px;
+}
+
+.navigation {
+    margin-bottom: 15px;
+}
+
+.main-section {
+    width: 40%;
+    border: 1px solid #ccc;
+    float: left;
+}
+.main-form {
+    float: right;
+    width: 58%;
+}
+.input-holder {
+    margin-bottom: 15px;
+}
+
+li {
+    cursor: pointer;
+}
+li:hover {
+    background: #337ab7;
+    color: white;
+}
+.main-section {
+    height: 400px;
+    overflow-y: auto;
+}
+

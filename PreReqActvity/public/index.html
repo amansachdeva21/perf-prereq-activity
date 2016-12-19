@@ -1,0 +1,120 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <base href="/">
+
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="libs/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+  <title>Perf PreReq activity</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="libs/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+
+
+</head>
+
+<body>
+
+  <header>
+    <div class="navigation">
+      <button id="load-data" class="tabs-item btn btn-primary">Load</button>
+      <button id="new-item" class="tabs-item btn btn-primary">New</button>
+    </div>
+  </header>
+
+  <section >
+    <ul class="release-holder list-group main-section"></ul>
+
+    <form class="main-form">
+      <input type="text" name="release-id" class="release-id hidden" disabled>
+
+      <div class="input-holder">
+        <p>Release Name</p>
+        <input type="text" name="release-name" class="release-name form-control" required>
+      </div>
+
+      <div class="input-holder">
+        <p>Run Number</p>
+        <input type="text" name="release-number" class="release-number form-control" required>
+      </div>
+
+      <div class="input-holder">
+        <p>Owner</p>
+        <input type="text" name="release-owner" class="release-owner form-control" required>
+      </div>
+
+      <div class="input-holder">
+        <p>Deployment Status</p>
+        <select name="release-stdata--dep_st" class="release-stdata--dep_st form-control">
+          <option value="true">Done</option>
+          <option value="false">Not Done</option>
+          <option value="NA">Not Required</option>
+        </select>
+      </div>
+
+      <div class="input-holder">
+        <p>Dmap Query</p>
+        <select name="release-stdata--dmap_que" class="release-stdata--dmap_que form-control">
+          <option value="true">Done</option>
+          <option value="false">Not Done</option>
+          <option value="NA">Not Required</option>
+        </select>
+      </div>
+
+      <div class="input-holder">
+        <p>Keys Table Check</p>
+        <select name="release-stdata--keys_table" class="release-stdata--keys_table form-control">
+          <option value="true">Done</option>
+          <option value="false">Not Done</option>
+          <option value="NA">Not Required</option>
+        </select>
+      </div>
+
+      <div class="input-holder">
+        <p>Restore Point</p>
+        <select name="release-stdata--restore_point" class="release-stdata--restore_point form-control">
+          <option value="true">Done</option>
+          <option value="false">Not Done</option>
+          <option value="NA">Not Required</option>
+        </select>
+      </div>
+
+      <div class="input-holder">
+        <p>Node Sync</p>
+        <select name="release-stdata--node_sync" class="release-stdata--node_sync form-control">
+          <option value="true">Done</option>
+          <option value="false">Not Done</option>
+          <option value="NA">Not Required</option>
+        </select>
+      </div>
+
+      <div class="input-holder">
+        <p>Index Rebuild</p>
+        <select name="release-stdata--index_rebuild" class="release-stdata--index_rebuild form-control">
+          <option value="true">Done</option>
+          <option value="false">Not Done</option>
+          <option value="NA">Not Required</option>
+        </select>
+      </div>
+
+      <div class="input-holder">
+        <p>Stats Gather</p>
+        <select name="release-stdata--stats_gather" class="release-stdata--stats_gather form-control">
+          <option value="true">Done</option>
+          <option value="false">Not Done</option>
+          <option value="NA">Not Required</option>
+        </select>
+      </div>
+
+      <input class="btn btn-primary submit" type="submit" value="Submit">
+    </form>
+
+  </section>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
