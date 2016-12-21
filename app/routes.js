@@ -71,7 +71,7 @@ module.exports = function(app) {
     // route to handle all angular requests
     app.get('*', function(req, res) {
         //res.sendFile('C:/Users/asach2/Downloads/starter-node-angular-master/starter-node-angular-master/public/index.html'); // load our public/index.html file
-        res.sendFile("/index.html", {"root": __dirname});
+        res.sendfile("/index.html", {"root": __dirname});
     });
 
 };

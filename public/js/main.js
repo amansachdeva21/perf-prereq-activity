@@ -22,7 +22,7 @@ var mainObj = mainObj || {};
             $('.release-number, .release-name').prop( "disabled", false );
             $.ajax({
                 type: 'POST',
-                url: 'http://localhost:8080/api/insert',
+                url: "http://"+window.location.host+"/api/insert",
                 data: $('form').serialize(),
                 success: fnFormSuccess,
                 error: fnFormFailure
@@ -49,7 +49,7 @@ var mainObj = mainObj || {};
     function fnLoadData() {
 
         $.ajax({
-            url: "http://localhost:8080/api/nerds",
+            url: "http://"+window.location.host+"/api/nerds",
             context: document.body
         }).done(function(data) {
             console.log(data)
